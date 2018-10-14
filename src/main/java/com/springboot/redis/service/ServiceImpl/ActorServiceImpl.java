@@ -1,9 +1,9 @@
-package com.springboot.cache.service.ServiceImpl;
+package com.springboot.redis.service.ServiceImpl;
 
-import com.springboot.cache.dao.ActorRedisDao;
-import com.springboot.cache.entity.Actor;
-import com.springboot.cache.repository.ActorRepository;
-import com.springboot.cache.service.ActorService;
+import com.springboot.redis.dao.ActorRedisDao;
+import com.springboot.redis.entity.Actor;
+import com.springboot.redis.repository.ActorRepository;
+import com.springboot.redis.service.ActorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

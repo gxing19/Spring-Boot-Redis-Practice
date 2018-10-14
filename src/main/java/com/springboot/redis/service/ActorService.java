@@ -1,6 +1,6 @@
-package com.springboot.cache.service;
+package com.springboot.redis.service;
 
-import com.springboot.cache.entity.Actor;
+import com.springboot.redis.entity.Actor;
 
 public interface ActorService {
 

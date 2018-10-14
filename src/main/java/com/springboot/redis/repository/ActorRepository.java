@@ -1,6 +1,6 @@
-package com.springboot.cache.repository;
+package com.springboot.redis.repository;
 
-import com.springboot.cache.entity.Actor;
+import com.springboot.redis.entity.Actor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package com.springboot.cache.controller;
+package com.springboot.redis.controller;
 
-import com.springboot.cache.entity.Actor;
-import com.springboot.cache.service.ActorService;
+import com.springboot.redis.entity.Actor;
+import com.springboot.redis.service.ActorService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

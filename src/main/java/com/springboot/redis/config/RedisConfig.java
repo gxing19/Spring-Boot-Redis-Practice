@@ -1,4 +1,4 @@
-package com.springboot.cache.config;
+package com.springboot.redis.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
@@ -16,23 +16,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 import java.net.UnknownHostException;
 
 @Configuration
-@EnableRedisRepositories//Spring Boot 默认已开启对Redis Repository的支持，此注解可省略
 public class RedisConfig {
-
-    /**
-     * SpringBoot已自动注册了这两个Bean
-     */
-    /*@Bean
-    public RedisConnectionFactory redisConnectionFactory(){
-        return new JedisConnectionFactory();
-    }
-
-    @Bean
-    public RedisTemplate<Object, Object> redisTemplate(){
-        RedisTemplate<Object, Object> template = new RedisTemplate<>();
-        template.setConnectionFactory(redisConnectionFactory());
-        return template;
-    }*/
 
     /**
      * redis默认使用jdk的二进制数据来序列化
@@ -54,8 +38,8 @@ public class RedisConfig {
         om.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
         jackson2JsonRedisSerializer.setObjectMapper(om);
 
-        template.setValueSerializer(jackson2JsonRedisSerializer); //1
-        template.setKeySerializer(new StringRedisSerializer()); //2
+        template.setKeySerializer(new StringRedisSerializer()); //1
+        template.setValueSerializer(jackson2JsonRedisSerializer); //2
 
         template.afterPropertiesSet();
         return template;

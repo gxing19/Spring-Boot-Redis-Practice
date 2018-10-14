@@ -1,4 +1,4 @@
-package com.springboot.cache.entity;
+package com.springboot.redis.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 

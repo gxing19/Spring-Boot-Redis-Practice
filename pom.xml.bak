@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.springboot</groupId>
-    <artifactId>redis</artifactId>
+    <artifactId>cache-redis</artifactId>
     <version>v1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>spring-boot-redis</name>
+    <name>spring-boot-cache-redis</name>
     <description>Redis Demo project for Spring Boot</description>
 
     <parent>

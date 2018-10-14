@@ -1,4 +1,4 @@
-package com.springboot.cache.dao;
+package com.springboot.redis.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
