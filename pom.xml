@@ -8,7 +8,7 @@
     <version>v1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>spring-boot-redis</name>
+    <name>spring-boot-redis-practice</name>
     <description>Redis Demo project for Spring Boot</description>
 
     <parent>
