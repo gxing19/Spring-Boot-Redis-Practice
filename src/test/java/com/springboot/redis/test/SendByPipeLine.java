@@ -45,7 +45,7 @@ public class SendByPipeLine {
                 connection.openPipeline();
 
                 //执行业务,打包多条命令
-                for (int i = 0; i < 10000; i++) {
+                for (int i = 0; i < 100; i++) {
                     String key = "key:" + i;
                     String value = "value" + i;
                     connection.set(key.getBytes(), value.getBytes());

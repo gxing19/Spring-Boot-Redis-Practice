@@ -35,7 +35,7 @@ public class SaveDataByDataType {
     @Test
     public void saveActorToString() {
         Actor actor = new Actor();
-        for (Long i = 0l; i < 10000; i++) {
+        for (Long i = 0l; i < 100; i++) {
             actor.setActorId(i).setFirstName("first_" + i)
                     .setLastName("last_" + i).setLastUpdate(new Date());
             redisTemplate.opsForValue().set(String.valueOf(actor.getActorId()), actor);
@@ -45,9 +45,10 @@ public class SaveDataByDataType {
     /**
      * 使用HASH存储
      */
+    @Test
     public void saveActorToHash() {
         Actor actor = new Actor();
-        for (Long i = 0l; i < 10000; i++) {
+        for (Long i = 0l; i < 100; i++) {
             actor.setActorId(i).setFirstName("first_" + i)
                     .setLastName("last_" + i).setLastUpdate(new Date());
             /*redisTemplate.opsForHash().put("actor" + i, "lastName",actor.getLastName());
@@ -63,6 +64,7 @@ public class SaveDataByDataType {
     /**
      * 使用HASH 分布存储50000条用户数据
      */
+    @Test
     public void saveToHashTest() {
         String nickName1 = null;
         String nickName2 = null;
